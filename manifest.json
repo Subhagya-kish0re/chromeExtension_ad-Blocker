@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Ad Blocker",
+    "version": "1.0.0",
+    "description": "Block annoying ads on the web.",
+    "icons": {
+        "48": "ad-blocker.png"
+      },
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "action": {
+        "default_icon": "ad-blocker.png"
+      },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    }
+}
